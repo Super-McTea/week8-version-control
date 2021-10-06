@@ -5,8 +5,8 @@ using UnityEngine;
 public class Scorekeeper : MonoBehaviour
 {
 
-    private int score;
-    int Score
+    private static int score;
+    public static int Score
     {
         get
         {
@@ -39,7 +39,7 @@ public class Scorekeeper : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void IncreaseScore(int coinValue)
+    public static void IncreaseScore(int coinValue)
     {
         score += coinValue;
     }
