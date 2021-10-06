@@ -10,7 +10,7 @@ public class PlayerOneMovement : MonoBehaviour
     void Update()
     {
         float dx = Input.GetAxis(InputAxes.PlayerOneHorizontal);
-        float dz = Input.GetAxis(InputAxes.PlayerOneHorizontal);
+        float dz = Input.GetAxis(InputAxes.PlayerOneVertical);
 
         if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
         {
