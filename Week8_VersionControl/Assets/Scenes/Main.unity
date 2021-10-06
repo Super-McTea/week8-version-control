@@ -473,6 +473,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8939e4f7aa186e74c86f5ac7097e85f7, type: 2}
+    - target: {fileID: 2773154551348469460, guid: c1acedc0f68a29844b4ac8ac93703f37, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2773154551348469463, guid: c1acedc0f68a29844b4ac8ac93703f37, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -488,6 +492,10 @@ PrefabInstance:
     - target: {fileID: 2773154551858902400, guid: c1acedc0f68a29844b4ac8ac93703f37, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773154551858902400, guid: c1acedc0f68a29844b4ac8ac93703f37, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2773154551858902403, guid: c1acedc0f68a29844b4ac8ac93703f37, type: 3}
       propertyPath: m_RootOrder
@@ -535,24 +543,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1acedc0f68a29844b4ac8ac93703f37, type: 3}
---- !u!1 &2773154551156955710 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2773154551858902400, guid: c1acedc0f68a29844b4ac8ac93703f37, type: 3}
-  m_PrefabInstance: {fileID: 2773154551156955709}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2773154551156955711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2773154551156955710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42d9275fa3edbda40b0b54a313b7d411, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 20
 --- !u!1001 &2943656539522144183
 PrefabInstance:
   m_ObjectHideFlags: 0
