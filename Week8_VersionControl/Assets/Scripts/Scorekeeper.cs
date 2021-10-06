@@ -12,7 +12,6 @@ public class Scorekeeper : MonoBehaviour
         {
             return score;
         }
-
     }
 
     private Scorekeeper instance;
