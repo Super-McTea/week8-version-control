@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public Text scoreText;
+    public Text p1ScoreText;
+    public Text p2ScoreText;
 
     private UIManager instance;
 
@@ -32,6 +33,7 @@ public class UIManager : MonoBehaviour
     
     void Update()
     {
-        scoreText.text = string.Format("Score: {0}", Scorekeeper.Score);
+        p1ScoreText.text = string.Format("Player 1 Score: {0}", Scorekeeper.P1Score);
+        p2ScoreText.text = string.Format("Player 2 Score: {0}", Scorekeeper.P2Score);
     }
 }
