@@ -5,12 +5,21 @@ using UnityEngine;
 public class Scorekeeper : MonoBehaviour
 {
 
-    private static int score;
-    public static int Score
+    public static int pointsPerPickup = 10;
+    private static int p1Score;
+    public static int P1Score
     {
         get
         {
-            return score;
+            return p1Score;
+        }
+    }
+    private static int p2Score;
+    public static int P2Score
+    {
+        get
+        {
+            return p2Score;
         }
     }
 
@@ -37,8 +46,13 @@ public class Scorekeeper : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public static void IncreaseScore(int coinValue)
+    public static void IncreaseScore1()
     {
-        score += coinValue;
+        p1Score += pointsPerPickup;
+    }
+
+    public static void IncreaseScore2()
+    {
+        p2Score += pointsPerPickup;
     }
 }
