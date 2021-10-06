@@ -6,7 +6,7 @@ public class CoinCollision : MonoBehaviour
 {
     [SerializeField] private int coinValue;
     
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter()
     {
         Scorekeeper.IncreaseScore(coinValue);
         Destroy(gameObject);
