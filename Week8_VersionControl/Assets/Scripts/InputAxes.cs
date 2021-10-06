@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class InputAxes : MonoBehaviour
 {
-    public const string Horizontal = "Horizontal";
-    public const string Vertical = "Vertical";
+    public const string PlayerOneHorizontal = "PlayerOneHorizontal";
+    public const string PlayerOneVertical = "PlayerOneVertical";
+
+    public const string PlayerTwoHorizontal = "PlayerTwoHorizontal";
+    public const string PlayerTwoVertical = "PlayerTwoVertical";
 }

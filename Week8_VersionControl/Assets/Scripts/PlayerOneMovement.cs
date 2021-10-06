@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerOneMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed;
 
     // Update is called once per frame
     void Update()
     {
-        float dx = Input.GetAxis(InputAxes.Horizontal);
-        float dz = Input.GetAxis(InputAxes.Vertical);
+        float dx = Input.GetAxis(InputAxes.PlayerOneHorizontal);
+        float dz = Input.GetAxis(InputAxes.PlayerOneHorizontal);
 
         if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
         {

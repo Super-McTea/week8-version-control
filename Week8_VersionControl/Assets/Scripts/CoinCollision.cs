@@ -8,7 +8,6 @@ public class CoinCollision : MonoBehaviour
     
     void OnTriggerEnter()
     {
-        Scorekeeper.IncreaseScore(coinValue);
         Destroy(gameObject);
     }
 }
