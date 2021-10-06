@@ -1,19 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Text scoreText;
 
-    // Update is called once per frame
+    private UIManager instance;
+
+    UIManager Instance
+    {
+        get
+        {
+            return instance;
+        }
+    }
+    
+    void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(gameObject);
+    }
+    
     void Update()
     {
-        
+        scoreText.text = string.Format("Score: {0}", Scorekeeper.Score);
     }
 }
