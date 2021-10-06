@@ -6,7 +6,7 @@ public class Scorekeeper : MonoBehaviour
 {
 
     private static int score;
-    int Score
+    public static int Score
     {
         get
         {
